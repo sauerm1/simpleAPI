@@ -5,8 +5,8 @@ var fs = require('fs');
 
 // This line is from the Node.js HTTPS documentation.
 var options = {
-  key: fs.readFileSync('../certs/client-key.pem'),
-  cert: fs.readFileSync('../certs/client-cert.pem')
+  key: fs.readFileSync('/etc/nginx/ssl/client-key.pem'),
+  cert: fs.readFileSync('/etc/nginx/ssl/client-cert.pem')
 };
 
 // Create a service (the app object is just a callback).
