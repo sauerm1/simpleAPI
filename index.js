@@ -13,7 +13,7 @@ var options = {
 var app = express();
 app.get('/',(req, res) => {
     console.log(req.rawHeaders)
-    res.send('Hello World')
+    res.send(req.rawHeaders)
 });
 
 
